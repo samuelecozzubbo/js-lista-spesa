@@ -11,3 +11,18 @@ while (i < shoppingList.length) {
     list.innerHTML += `<li>${shoppingList[i]}</li>`;
     i++;
 }
+
+let myBtn = document.querySelector("button");
+let userInput = document.getElementById("itemInput");
+
+
+myBtn.addEventListener("click",
+    function() {
+        console.log("hai cliccato");
+        let userInputItem = userInput.value;
+        console.log(userInputItem);
+
+        let newItem = `<li>${userInputItem}</li>`;
+        list.innerHTML += newItem;
+    }
+)
